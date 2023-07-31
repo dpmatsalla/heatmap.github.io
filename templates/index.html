@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Strava HeatMap Web Application</h2>
+    <form action="/authorize" method="POST">
+        <button type="submit">Obtain Strava Data</button>
+        <button type="submit" formaction="/blank_map?print=True">Map without Strava Data</button>
+    </form>
+    <h3><br>About the Strava Heatmap site</h3>
+    <p id="intro">This site creates 2D visualisations of an athlete's activities in Strava. Then different types of activities (Ride, Run, etc) are displayed as layers on various map tiles, which the user can select.
+    The position, orientation and speed of the user is also displayed, and this can be hidden by de-selecting "My location" in the menu.  The user can also select any activity, which will produce a link that the user
+    can follow to the relevant Strava activity page.  <br><br>
+    The app requires the user to authorise real-only access their Strava data in the following screen. Typical images of Strava Heatmap data are displayed below.  Can you guess what cities they are?</p>
+    <p align="center">
+        <img src="/static/Perth.PNG" height="250">
+        <img src="/static/Brisbane.PNG" height="250">
+        <img src="/static/Ottawa.PNG" height="250">
+    </p>
+{% endblock %}
