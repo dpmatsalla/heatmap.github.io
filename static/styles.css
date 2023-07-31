@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+.logo {
+  text-align: left;
+}
+.logo img {
+  height: 50px;
+}
+.title {
+  text-align: center;
+}
+.author {
+  text-align: right;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+td {
+    border: none;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+.content {
+  background-color: darkgreen;
+  padding: 20px;
+  color: white;
+  min-height: 80vh;
+}
+.content h2 {
+  text-align: center;
+}
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+}
