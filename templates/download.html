@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Athlete {{ athlete_id }} Authorised</h2>
+    <form id="myForm" action="/download" method="POST">
+        <input type="submit" style="display:none;" />
+    </form>
+    <p>Downloading data.  This could take a few minutes if this is the first time you're on this site, but future visits will be much quicker to update.  </p>
+    <p id="data">
+        {% for comment in comments %}
+            {{ comment }}<br>
+        {% endfor %}
+    </p>
+    <script>
+        document.getElementById("myForm").submit();
+    </script>
+{% endblock %}
