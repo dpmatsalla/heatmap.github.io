@@ -1,1 +1,3 @@
-# heatmap.github.io
+Strava Heatmap
+
+Description
